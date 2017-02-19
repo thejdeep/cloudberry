@@ -49,8 +49,8 @@ object AggregateFunc {
   val Avg = "avg"
   val DistinctCount = "distinctCount"
   val TopK = "topK"
-
-  val All = Set(Count, Min, Max, Sum, Avg, DistinctCount, TopK)
+  val inGroupTopK = "inGroupTopK"
+  val All = Set(Count, Min, Max, Sum, Avg, DistinctCount, TopK, inGroupTopK)
 }
 
 case class Level(levelTag: String) extends GroupFunc {
